@@ -1,6 +1,6 @@
 main
     aside#photos
-      img(src='myapp/public/images/chili.jpg' alt='White Chicken Chili999' width='180')
+      img(src='images/chili.jpg' alt='White Chicken Chili999' width='180')
     h2
       blogtitle
     section#blogposts
@@ -27,4 +27,4 @@ main
             | {{ post.bio }}
           button.closeBtn.closeBtnB(v-on:click="$emit('close', post.thisBox = false)") Close
           p#close_info
-          script(src='js/vue.js')
+          

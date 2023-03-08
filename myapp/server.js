@@ -8,6 +8,9 @@ app.get('/', function(req, res){
 });
 
 app.set('views', path.join(__dirname, 'views'));
+//use middleware to serve static files
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/images", express.static("images"));
 app.set('view engine', 'pug');
 
 app.listen(3000);
